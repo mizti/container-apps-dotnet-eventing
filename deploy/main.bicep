@@ -60,7 +60,7 @@ module pubsub 'webpubsub.bicep' = {
 }
 
 // Service Bus Processor Container App
-resource sbContainerApp 'Microsoft.App/containerApps@2022-01-01-preview' = {
+resource sbContainerApp 'Microsoft.App/containerApps@2022-03-01' = {
   name: 'service-bus-app'
   location: location
   properties: {
@@ -149,7 +149,7 @@ module eventHub 'eventhub.bicep' = {
   }
 }
 
-resource ehContainerApp 'Microsoft.App/containerApps@2022-01-01-preview' = {
+resource ehContainerApp 'Microsoft.App/containerApps@2022-03-01' = {
   name: 'event-hub-app'
   location: location
   properties: {
